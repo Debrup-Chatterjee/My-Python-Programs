@@ -1,0 +1,14 @@
+r=int(input("Enter the number of rows: "))
+c=int(input("Enter the number of columns: "))
+arr=[]
+print("Enter the values in row major order: ")
+for i in range(r):
+     a=[]
+     for j in range(c):
+          x=int(input())
+          a.append(x)
+     arr.append(a)
+for i in range(r):
+     for j in range(c):
+          print(arr[i][j],end=",")
+     print()
