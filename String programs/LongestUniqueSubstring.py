@@ -2,7 +2,7 @@ s=input("Enter a string: ")
 s2=""
 m=""
 if len(s)==1:
-     print("The longest unique substring is the string itself...")
+     exit("The longest unique substring is the string itself...")
 for i in s:
      if i not in s2:
           s2+=i

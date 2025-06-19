@@ -1,8 +1,8 @@
-import numpy
-arr=[]
-a=int(input("size of array: "))
-for i in range(a):
-     arr.append(float(input("Elements: ")))
-print(arr)
-arr=numpy.array(arr)
-print(arr)
+from collections import Counter
+class Solution:
+    def singleNonDuplicate(self, nums):
+        d=dict(Counter(nums))
+        f=list(filter(lambda x: d[x]==1,d.keys()))
+        print(f)
+obj=Solution()
+obj.singleNonDuplicate([11,2,2,3,3])

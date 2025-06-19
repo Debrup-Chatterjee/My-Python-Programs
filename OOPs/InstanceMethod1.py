@@ -1,3 +1,9 @@
+'''Instance methods are the methods which act upon the instance variable of the class.Instance methods are
+bound to instances(or Objects) and hence are called as: instancename.method().Since instance variables are
+available in the instance,instance methods need to know the memory address of the instance.This is provided
+through 'self' variable by defualt as first parameter for the instance method.While calling the instance
+methods,we need not pass any value to the 'self' variable.
+'''
 class Student:
      def __init__(self,name,age,student_id,grade): #Constructor to initialize the attributes
           self.name=name # 'self.name' refers to the instance variable 'name'
